@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li><a href="index.jsp">Main</a></li>
+        |
+        <li><select onChange="window.open(this.options[this.selectedIndex].value,'_blank')">
+            <option selected hidden>Operation</option>
+            <option value="admin.jsp">Add Admin</option>
+            <option><a href="">Add Manager</a></option>
+        </select>
+        </li>
+        |
+        <li><a href="">More</a></li>
+    </ul>
+</div>
+
+<div class="mid">
+    <div class="dataForm">
+        <form action="/admin" method="post">
+            First Name: <input type="text" name="firstname" placeholder="Enter Name"> <br> <br>
+            Last Name: <input type="text" name="lastname" placeholder="Enter Family"> <br> <br>
+            <input type="submit">
+        </form>
+    </div>
+    <div class="dataTable">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Status</th>
+                <th>Operation</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Moahmmedhossyn</td>
+                <td>Asnari</td>
+                <td>Active</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Remove</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="foot">
+    © copyright
+</div>
+</body>
+</html>

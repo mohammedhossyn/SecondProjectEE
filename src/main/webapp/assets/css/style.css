@@ -1,0 +1,54 @@
+.nav{
+background-color: darkslategray;
+    padding: 1px;
+}
+a{
+    text-decoration: none;
+    color: rgba(194, 166, 166, 0.87);
+}
+li{
+    list-style: none;
+    display: inline;
+    margin: 5px;
+}
+select{
+    background-color: darkslategray;
+    color: rgba(194, 166, 166, 0.87);
+    border: 0px;
+    width: 85px;
+    font-family: inherit;
+    font-size: inherit;
+}
+option:hover {
+  color: black;
+}
+select:hover{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+.foot{
+    color: darkslategray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1px;
+
+}
+.dataForm , .dataTable{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(194, 166, 166, 0.53);
+    margin: auto;
+}
+table{
+    width: 100%;
+}
+table,tr,th,td{
+    border: white solid 1px;
+    border-collapse: collapse;
+    color: darkslategray;
+    text-align: center;
+}
+
